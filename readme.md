@@ -31,6 +31,7 @@ Split Time is an informational website where users can learn about exercises and
 
 # IMPORTANT NOTE: 
   * The HOME PAGE does not have a video playing in the background.
+  * Create a new directory in the static directory named "video" (src/main/resources/static)
   * Add your own video to this directory (src/main/resources/static/video)
   * Make sure your video is mp4 type and is named (SplitVideoProject.mp4)
   * Test and see if the video background works
