@@ -1,0 +1,270 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Vid background */
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+.video-background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home-content{
+    text-align: center;
+}
+
+.quote{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+#quote1{
+    font-style: italic;
+}
+
+#quote2{
+    margin-top: 10px;
+}
+
+.create{
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    padding: 14px 60px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.create:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(65%);
+}
+
+@media (min-aspect-ratio: 16/9){
+    video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* Navigation */
+.nav{
+    position: fixed;
+    z-index: 1;
+}
+
+.color{
+    transition: 0.5;
+    list-style-type: none;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.barColor1{
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+.barColor2{
+    transition: 0.5s;
+    background-color: black;
+}
+
+#logo{
+    width: 100px;
+    position: fixed;
+    left: 662px;
+    top: 0;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 35px 37px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+li a:hover:not(.active2){
+    text-decoration: underline;
+}
+
+.active1{
+    text-decoration: underline;
+}
+
+.active2{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 0px 1px black inset;
+}
+
+.logout-btn1{
+    color: #f9fd0d;
+}
+
+.logout-btn2{
+    color: black;
+    background-color: #f9fd0d;
+    box-shadow: 0px 0px 0px 1px black inset;
+}
+
+#home-container{
+    height: 100vh;
+}
+
+.title{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#one{
+    margin-top: 20px;
+}
+
+.container{
+    padding: 5%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-btn{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.submit-btn:hover, .edit-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.submit-btn:active, .edit-btn:active{
+    background-color: black;
+}
+
+.container-s{
+    max-width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: solid black;
+    width: 280px;
+    height: 280px;
+    margin: 10px;
+}
+
+.de-btns{
+    position:absolute;
+    bottom: 10px;
+    width: 260px;
+    height: 56px;
+}
+
+.delete-btn{
+    background-color: #f9fd0d;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #f9fd0d;
+}
+
+.delete-btn:hover{
+    background-color: white;
+}
+
+.delete-btn:active{
+    background-color: #f9fd0d;
+}
+
+.edit-btn{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid black;
+    position: absolute;
+    right: 15px;
+}
+
+#split-edit-modal-title{
+    font-weight: bold;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
+
+#update-split-button{
+    background-color: black;
+    border-color: black;
+}
+
+#update-split-button:hover, #close:hover{
+    background-color: white;
+    color: black;
+}

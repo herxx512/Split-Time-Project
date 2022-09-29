@@ -1,0 +1,9 @@
+.idea
+
+# Application Properties
+src/main/resources/application.properties
+target/classes/application.properties
+
+# Video
+src/main/resources/static/video/SplitVideoProject.mp4
+target/classes/static/video/SplitVideoProject.mp4

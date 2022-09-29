@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/home.css" type="text/css">
+    <title>Home</title>
+</head>
+<body>
+
+    <div class="nav" id="nav">
+        <ul class="color">
+            <li><a href="./home.html" id="home" class="active">Home</a></li>
+            <li><a href="./exercises.html" id="exercises">Exercises</a></li>
+            <img src="./photo/split_time.png" alt="logo" id="logo">
+            <li style="float:right"><a class="logout-btn" id="logoutBtn" href="./login.html" onclick="handleLogout()">Logout</a></li>
+        </ul>
+    </div>
+
+    <section class="video-background">
+        <video autoplay loop muted plays-inline>
+            <source src="./video/SplitVideoProject.mp4" type="video/mp4">
+        </video>
+
+        <div class="home-content">
+            <h1 class="quote" id="quote1">"The only person you are destined to become is the person you decide to be"</h1>
+
+            <h2 class="quote" id="quote2">-Ralph Waldo Emerson</h2>
+
+            <a href="#home-container" class="create">Create a Split</a>
+        </div>
+
+    </section>
+
+    <div class="container" id="home-container">
+        <h1 class="title" id="one">CREATE A SPLIT</h1>
+        <div id="split-form-container">
+            <form id="split-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Day" id="day" class="form-control">
+                    <input type="text" placeholder="Exercise Name" id="exerciseName" class="form-control">
+                    <input type="number" placeholder="Sets" id="sets" class="form-control">
+                    <input type="number" placeholder="Repititions" id="repititions" class="form-control">
+                    <input type="text" placeholder="Type" id="type" class="form-control">
+                </div>
+                <button id="submit-button" type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <h1 class="title">WORKOUT SCHEDULE</h1>
+        <div id="split-container" class="container-s"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="split-edit-modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="split-edit-modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="split-edit-modal-title">EDIT YOUR SPLIT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="modal-day" class="form-control" placeholder="Day">
+                    <input type="text" id="modal-exerciseName" class="form-control" placeholder="Exercise Name">
+                    <input type="number" id="modal-sets" class="form-control" placeholder="Sets">
+                    <input type="number" id="modal-repititions" class="form-control" placeholder="Repititions">
+                    <input type="text" id="modal-type" class="form-control" placeholder="Type">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close">Close</button>
+                    <button type="button" id="update-split-button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <script src="./javascript/home.js" type="application/javascript"></script>
+</body>
+</html>

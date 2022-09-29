@@ -1,0 +1,131 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Navigation */
+.nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+}
+
+#logo{
+    width: 100px;
+    position: fixed;
+    left: 662px;
+}
+
+.color{
+    transition: 0.5;
+    list-style-type: none;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 35px 37px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    text-decoration: underline;
+}
+
+.active{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 0px 1px black inset;
+}
+
+.logout-btn{
+    color: black;
+    background-color: #f9fd0d;
+    box-shadow: 0px 0px 0px 1px black inset;
+}
+
+.quote{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h2{
+    font-style: italic;
+}
+
+.title{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 130px;
+}
+
+h2{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+h3{
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.container{
+    max-width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: solid black;
+    width: 280px;
+    height: 400px;
+    margin: 10px;
+}
+
+.card-inside, .card-body{
+    width: 280px;
+    height: 400px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 14px;
+}
+
+.card-text{
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+}
+
+#name{
+    font-weight: bold;
+}
+
+#photo{
+    max-width: 250px;
+    max-height: auto;
+}
+
+#tutorial:hover{
+    font-weight: bold;
+}
+
